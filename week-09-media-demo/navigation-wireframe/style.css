@@ -1,0 +1,34 @@
+/* CSS Document — Wireframing and Navigation */
+
+body {
+  font-family: sans-serif;
+  margin: 50px;
+}
+
+article {
+  width: 500px; /* fixed width for main text block */
+}
+
+/* Navigation bar */
+nav {
+  width: 100%;
+  border-bottom: 1px solid blue; /* visual separation from content */
+  height: 50px;
+  display: block;
+}
+
+/* Individual navigation items */
+.nav-item {
+  float: left; /* align items horizontally */
+  margin-right: 15px;
+  padding: 10px;
+}
+
+.nav-item:hover {
+  background: #efefef; /* highlight item on hover */
+}
+
+/* Remove default list bullets from nav */
+li {
+  list-style: none;
+}

@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Video Examples</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      background: white;
+      margin: 40px;
+    }
+
+    .video-box {
+      width: 600px;
+      margin-bottom: 40px;
+
+      animation: move 3s infinite;
+
+
+    }
+
+
+@keyframes move {
+
+0% {
+    transform: scale(1);
+}
+
+40% {
+    transform: scale(2);
+}
+
+70% {
+    transform: scale(0.4);
+}
+
+100% {
+    transform: scale(1);
+}
+
+}
+
+    video,
+    iframe {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Video Examples</h1>
+
+  <div class="video-box">
+    <h2>Internal Video File</h2>
+
+
+    <a href="page3.html">
+    <video controls autoplay>
+      <source src="assets/video-clip.mp4" type="video/mp4">
+    </video>
+  </a>
+
+  </div>
+
+
+  <div class="video-box">
+    <h2>External Video — YouTube</h2>
+
+    <iframe width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/vPhg6sc1Mk4?si=PVEn-dXHtCCyH90B" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: sans-serif;
+  }
+
+  .circle-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+
+
+#large-circle {
+   
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: transparent;
+    border: #000000 solid 4px;
+
+    display: flex;
+    flex-shrink: 0;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circle {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px dashed #000000;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+   
+    
+
+    animation: circle-animation 5s infinite ;
+
+}
+
+@keyframes circle-animation {
+
+    0% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(2);
+    }
+
+    70% {
+        transform: scale(0.4);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#large-circle-02 {
+   
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: transparent;
+    border: #000000 solid 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+}
+
+.circle-02 {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px dashed #000000;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+
+    animation: circle-animation 2.5s infinite ;
+
+}
+
+
+
+
+ 
+#container {
+    width: 300px;
+    height: 300px;
+    border: dashed 3px #000000; /* container to show the animation area */
+  }
+  
+  p {
+    font-size: 4rem;
+    color: #ff0000;
+    
+    margin: 0;
+    padding: 0;
+  }
+  
+  @keyframes move {
+    /* moves the text around the four corners of the container */
+    0%   { top: 0%;   left: 0%; }
+    25%  { top: 100%; left: 100%; }
+    50%  { top: 0%;   left: 100%; }
+    100% { top: 100%; left: 0%; }
+  }
+  
+  .moving {
+    position: relative; /* allows top/left offsets to animate */
+    color: #ff0000;
+    text-align: left;
+    border: dashed 3px #ff0000;
+  
+    /* apply the move animation */
+    animation: move 10s ease infinite alternate-reverse;
+    /* shorthand for:
+       animation-name: move;
+       animation-duration: 10s;
+       animation-timing-function: ease;
+       animation-iteration-count: infinite;
+       animation-direction: alternate-reverse;
+    */
+  }
+

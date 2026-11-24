@@ -1,0 +1,50 @@
+/* CSS Document — Exercise 6: Image Gallery Layout */
+
+html {
+
+  font-size: 100%;
+  font-family: monospace;
+  
+  }
+  
+  body {
+  
+    background: #fff;
+  
+  }
+  
+  
+  h1 {
+    left: 20px;
+    top: 20px;
+    font-size: 1rem;
+    text-align: left;
+    border-bottom: 4px solid blue;
+  
+  }
+  
+  
+  #content {
+    width: 900px;           /* fixed container width */
+    margin: 120px auto;     /* centers the gallery block */
+  }
+  
+  #flex-gallery {
+    display: flex;          /* activates flexbox */
+    flex-wrap: wrap;        /* allows images to wrap into rows */
+    width: 100%;
+    margin: 100px 0;
+  }
+  
+  
+  .image {
+    width: 290px;           /* fixed width for each image block */
+    margin: 5px;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+   
+  }
+  
